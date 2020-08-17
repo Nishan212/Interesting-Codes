@@ -58,7 +58,7 @@ int rec(char str[], int i) {
   string ans = "";
 
   if (str[i] != '\0') {           // end of string not reached
-    ans.push_back(str[i]);        // one character encoding
+    ans.push_back(str[i]);        // one character decoding
 
     s1.push(ans);
     rec(str, i + 1);              // recursive call to the rest of the string
@@ -67,7 +67,7 @@ int rec(char str[], int i) {
     if (str[i + 1] != '\0') {     // next character from current character
       ans = "";                   // not null
       ans.push_back(str[i]);
-      ans.push_back(str[i + 1]);  // two character encoding
+      ans.push_back(str[i + 1]);  // two character decoding
 
       s1.push(ans);
       rec(str, i + 2);            // recursive call to the rest of the string
