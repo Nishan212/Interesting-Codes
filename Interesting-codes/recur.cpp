@@ -33,7 +33,7 @@ int stoi(string str) {
   return integer;
 }
 
-// This function maps numbers to alphabets (ex : A -> 1, J -> 10, Z -> 26)
+// This function maps numbers to alphabets (ex : 1 -> A, 10 -> J, 26 -> Z)
 // Note: If you want to map to lower case replace '64' with '96'
 char mapper(string str) {
   return 64 + stoi(str);
