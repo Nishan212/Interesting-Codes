@@ -1,5 +1,7 @@
 # Interesting-Codes
 
+### Collection of some of the interesting coding questions I came acroos and their solutions
+
 **Case**: consider a string encoding such that each alphabet character is mapped
 to a number between 1 and 26
  - _ex: A = 1, J = 10, Y = 25, Z = 26_
