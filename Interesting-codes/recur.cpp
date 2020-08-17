@@ -47,8 +47,8 @@ char mapper(string str) {
   (ii) display character encoding of two characters and recurse
 
   ex: "...12...", where "..." can be any integers and any number of them
-  (i) "...AB..." <- one character coding, 1 -> A, 2 -> B
-  (ii) "...L..." <- two chracters coding, 12 -> L
+  (i) "...AB..." <- one character decoding, 1 -> A, 2 -> B
+  (ii) "...L..." <- two chracters decoding, 12 -> L
 
   Idea behind logic: atmost two characters from the encoded string
   can be mapped since mapping is from 1 -> A to 26 -> Z and 26 is two characters
@@ -64,7 +64,7 @@ int rec(char str[], int i) {
     rec(str, i + 1);              // recursive call to the rest of the string
     s1.pop();                     // backtracking
 
-    if (str[i + 1] != '\0') {     // second character from current character
+    if (str[i + 1] != '\0') {     // next character from current character
       ans = "";                   // not null
       ans.push_back(str[i]);
       ans.push_back(str[i + 1]);  // two character encoding
@@ -75,7 +75,7 @@ int rec(char str[], int i) {
     }
   }
   else {                          // end of string reached - hence display
-    ans = "";
+    ans = "";                     // displayed using two stack approach
     while(!s1.empty()) {
       s2.push(s1.top());
       s1.pop();
