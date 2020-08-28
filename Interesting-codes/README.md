@@ -1,6 +1,6 @@
 # Interesting-Codes
 
-### Collection of some of the interesting coding questions I came acroos and their solutions
+### Collection of some of the interesting coding questions I came across and their solutions
 
  1. **Case**: consider a string encoding such that each alphabet character is mapped
     to a number between 1 and 26
